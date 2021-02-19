@@ -4,7 +4,6 @@ import { taskService } from "../Services/TaskService";
 
 //Private
 function _draw() {
- 
 
 }
 
@@ -19,6 +18,6 @@ export default class TaskController{
 
     newList(){
         taskService.newList()
-        console.log("Hello from controller")
+        console.log("Hello from controller");
     }
 }
