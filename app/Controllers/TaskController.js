@@ -21,5 +21,12 @@ export default class TaskController{
         console.log("Hello from controller");
     }
 
-
+    create(event) {
+        event.preventDefault()        
+            let form = event.target
+            let list = {
+                title: form.title.value
+            }
+        taskService.create(list)       
+        }
 }
