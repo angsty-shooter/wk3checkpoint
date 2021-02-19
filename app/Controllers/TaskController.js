@@ -20,4 +20,6 @@ export default class TaskController{
         taskService.newList()
         console.log("Hello from controller");
     }
+
+
 }

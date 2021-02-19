@@ -8,7 +8,6 @@ class TaskService{
         document.getElementById('formElement').style.display = 'block';
     }
 
-
 }
 
 export const taskService = new TaskService
