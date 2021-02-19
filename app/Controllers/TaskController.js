@@ -1,5 +1,5 @@
 import { ProxyState } from "../AppState.js";
-import { taskService } from "../Services/TaskService";
+import { taskService } from "../Services/TaskService.js";
 
 
 //Private
