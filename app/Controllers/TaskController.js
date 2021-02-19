@@ -1,9 +1,10 @@
-
+import { ProxyState } from "../AppState.js";
+import { taskService } from "../Services/TaskService";
 
 //Private
 
 function _draw() {
-
+ 
 
 }
 
@@ -13,6 +14,12 @@ function _draw() {
 
 export default class TaskController{
 
+    constructor(){
+        _draw()
+    }
 
-
+    newList(){
+        console.log("Hello from controller")
+        taskService.newList()
+    }
 }
