@@ -1,8 +1,8 @@
 import { ProxyState } from "../AppState.js";
 import { taskService } from "../Services/TaskService";
 
-//Private
 
+//Private
 function _draw() {
  
 
@@ -11,7 +11,6 @@ function _draw() {
 
 
 //Public
-
 export default class TaskController{
 
     constructor(){
