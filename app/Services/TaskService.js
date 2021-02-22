@@ -5,7 +5,7 @@ import { saveState } from "../Utils/LocalStorage.js";
 
 class TaskService{
     constructor() {
-     ProxyState.on('tasks', saveState)
+     ProxyState.on('taskArr', saveState)
  }
     create(task){
         ProxyState.taskArr = [new Task(task), ...ProxyState.taskArr]

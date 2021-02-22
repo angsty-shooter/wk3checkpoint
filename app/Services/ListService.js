@@ -5,7 +5,7 @@ import { saveState } from "../Utils/LocalStorage.js";
 class ListService{
 
     constructor() {
-        ProxyState.on('lists', saveState)
+        ProxyState.on('listArr', saveState)
     }
 
     newList(){
