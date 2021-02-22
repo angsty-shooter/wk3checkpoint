@@ -1,4 +1,3 @@
-  
 import { ProxyState } from "../AppState.js";
 import Task from "../Models/List.js";
 import { saveState } from "../Utils/LocalStorage.js";
@@ -6,10 +5,10 @@ import { saveState } from "../Utils/LocalStorage.js";
 
 class TaskService{
     constructor() {
-     ProxyState.on('', saveState)
+     ProxyState.on('tasks', saveState)
  }
-    create(){
-        ProxyState.taskArr = [new Task(), ...ProxyState.taskArr]
+    create(newTask){
+        ProxyState.taskArr = [new Task(newTask), ...ProxyState.taskArr]
         console.log(ProxyState.taskArr)
     }
     

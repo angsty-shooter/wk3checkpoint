@@ -7,14 +7,14 @@ export default class TaskController{
     constructor() {
     }
 
-    create(event, pizzaId) {
+    create(event, listId) {
     event.preventDefault()        
         let form = event.target
-        let  = {
+        let task = {
             title: form.title.value,
-            Id: Id
+            listId: listId
         }
-    taskService.create()       
+    taskService.create(newTask)       
     }
 
     delete(taskId) {

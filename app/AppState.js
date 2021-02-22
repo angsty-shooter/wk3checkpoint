@@ -1,5 +1,6 @@
 import Value from "./Models/Value.js"
 import List from "./Models/List.js"
+import Task from "./Models/Task.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
