@@ -1,10 +1,10 @@
 import { ProxyState } from "../AppState.js";
-import List from "../Models/Task.js";
+import List from "../Models/List.js";
 
 export function saveState() {
     localStorage.setItem('taskmaster', JSON.stringify({
         lists: ProxyState.listArr,
-        // tasks: ProxyState.tasks
+        tasks: ProxyState.taskArr
     }))
 }
 

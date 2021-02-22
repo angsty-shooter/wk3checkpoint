@@ -22,7 +22,7 @@
                 <span class="ml-2 ">Task Master</span>
             </a>
             <div class="col-10 text-center">
-                <button class="btn btn-info" onclick="app.taskController.newList()">+ New List</button>
+                <button class="btn btn-info" onclick="app.listController.newList()">+ New List</button>
             </div>
         </nav>
     </header>
@@ -35,7 +35,7 @@
         <div id="app" class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <form id="formElement" style="display: none;" onsubmit="app.taskController.create(event)" >
+                    <form id="formElement" style="display: none;" onsubmit="app.listController.create(event)" >
                         <div class="form-group">
                         <input type="text" name="listName" placeholder="3-15 characters">
                         <button class="btn btn-outline-info" type="submit">Create List</button>

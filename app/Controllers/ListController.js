@@ -1,5 +1,4 @@
 import { ProxyState } from "../AppState.js";
-import List from "../Models/Task.js";
 import { listService } from "../Services/ListService.js";
 
 
@@ -7,7 +6,7 @@ import { listService } from "../Services/ListService.js";
 function _draw() {
     let listsElem = document.getElementById("listLabel")
     let template = ""
-    ProxyState.listArr.forEach(pizza => template += pizza.Template)
+    ProxyState.listArr.forEach(list => template += list.Template)
     listsElem.innerHTML = template
 }
 
