@@ -1,5 +1,5 @@
 import { ProxyState } from "../AppState.js";
-import Task from "../Models/List.js";
+import Task from "../Models/Task.js";
 import { saveState } from "../Utils/LocalStorage.js";
 
 

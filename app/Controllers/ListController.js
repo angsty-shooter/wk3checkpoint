@@ -1,5 +1,6 @@
 import { ProxyState } from "../AppState.js";
 import { listService } from "../Services/ListService.js";
+import { loadState } from "../Utils/LocalStorage.js";
 
 
 //Private
@@ -17,6 +18,8 @@ export default class ListController{
 
     constructor(){
         ProxyState.on("listArr", _draw)
+        ProxyState.on("taskArr", _draw)
+        loadState()
         _draw()
     }
 
@@ -30,9 +33,11 @@ export default class ListController{
         event.preventDefault()        
             let form = event.target
             let list = {
-                title: form.title.value
+                title: form.listName.value
             }
-        listService.create(list)       
+            console.log(form.listName.value);
+        listService.create(list)
+        console.log(list)       
         }
 
     delete(listId) {

@@ -11,8 +11,8 @@ export default class Task {
     get Template() {
         return /* html */`
         <div class="col-12">
-            <h1 class="${this.title.includes('extra') ? 'text-danger': ''}" >${this.title}<button type="button" class="text-danger close mt-3"
-                    onclick="app.taskController.delete('${this.id}')"><span>&times;</span></button> </h1>
+            <h5>${this.title}<button type="button" class="text-danger close mt-3"
+                    onclick="app.taskController.delete('${this.id}')"><span>&times;</span></button> </h5>
         </div>
         `
     }

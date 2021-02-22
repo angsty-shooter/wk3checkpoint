@@ -19,14 +19,14 @@ export default class List{
                     <input type="text" name="title" placeholder="Enter task...">
                     <button type="submit">Add Task</button>
                     <div class="row">
-                    ${this.title}
+                    ${this.Tasks}
                     </div>
                 </div>
             </form>
         </div>
         `
     }
-    get Toppings() {
+    get Tasks() {
         let template = ''
         let tasks = ProxyState.taskArr.filter(t => t.listId == this.id)
         tasks.forEach(t => template += t.Template)
