@@ -5,7 +5,10 @@ import { taskService } from "../Services/TaskService.js";
 
 //Private
 function _draw() {
-    List
+    let listsElem = document.getElementById("listLabel")
+    let template = ""
+    ProxyState.listArr.forEach(pizza => template += pizza.Template)
+    listsElem.innerHTML = template
 }
 
 
