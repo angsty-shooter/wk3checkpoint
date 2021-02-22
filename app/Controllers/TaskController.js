@@ -1,10 +1,11 @@
 import { ProxyState } from "../AppState.js";
+import List from "../Models/Task.js";
 import { taskService } from "../Services/TaskService.js";
 
 
 //Private
 function _draw() {
-
+    List
 }
 
 
