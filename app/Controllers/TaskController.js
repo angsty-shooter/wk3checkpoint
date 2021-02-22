@@ -14,7 +14,7 @@ export default class TaskController{
             title: form.title.value,
             listId: listId
         }
-    taskService.create(newTask)       
+    taskService.create(task)       
     }
 
     delete(taskId) {

@@ -18,7 +18,7 @@ class ListService{
     }
     delete(listId) {
         ProxyState.listArr = ProxyState.listArr.filter(l=> l.id != listId)
-        ProxyState.taskArr = ProxyState.task.filter(t=> t.listId != taskId)
+        ProxyState.taskArr = ProxyState.taskArr.filter(t=> t.listId != listId)
 }
 }
 export const listService = new ListService

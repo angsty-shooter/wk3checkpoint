@@ -7,8 +7,8 @@ class TaskService{
     constructor() {
      ProxyState.on('tasks', saveState)
  }
-    create(newTask){
-        ProxyState.taskArr = [new Task(newTask), ...ProxyState.taskArr]
+    create(task){
+        ProxyState.taskArr = [new Task(task), ...ProxyState.taskArr]
         console.log(ProxyState.taskArr)
     }
     

@@ -26,4 +26,10 @@ export default class List{
         </div>
         `
     }
+    get Toppings() {
+        let template = ''
+        let tasks = ProxyState.taskArr.filter(t => t.listId == this.id)
+        tasks.forEach(t => template += t.Template)
+        return template
+    }
 }
