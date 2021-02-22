@@ -1,6 +1,6 @@
 import { ProxyState } from "../AppState.js";
 import List from "../Models/Task.js";
-import { taskService } from "../Services/TaskService.js";
+import { listService } from "../Services/ListService.js";
 
 
 //Private
@@ -14,7 +14,7 @@ function _draw() {
 
 
 //Public
-export default class TaskController{
+export default class ListController{
 
     constructor(){
         ProxyState.on("listArr", _draw)
@@ -22,7 +22,7 @@ export default class TaskController{
     }
 
     newList(){
-        taskService.newList()
+        listService.newList()
         console.log("Hello from controller");
     }
 
@@ -33,6 +33,6 @@ export default class TaskController{
             let list = {
                 title: form.title.value
             }
-        taskService.create(list)       
+        listService.create(list)       
         }
 }

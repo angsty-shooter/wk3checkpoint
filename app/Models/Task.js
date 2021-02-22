@@ -12,9 +12,9 @@ export default class List{
         return /*html*/`
         <div class="col-4 border rounded shadow-lg">
             <h1>${this.title}<button class="text-danger close mt-3"
-            onclick="app.taskController.delete('${this.id}')"><span>&times;</span></button> </h1>
+            onclick="app.listController.delete('${this.id}')"><span>&times;</span></button> </h1>
             <h5>Tasks</h5>
-            <!--<form onsubmit="app.tasksController.create(event, '${this.id}')">
+            <form onsubmit="app.taskController.create(event, '${this.id}')">
                 <div class="form-group">
                     <input type="text" name="title" placeholder="Enter task...">
                     <button type="submit">Add Task</button>
@@ -22,7 +22,7 @@ export default class List{
                     ${this.title}
                     </div>
                 </div>
-            </form>-->
+            </form>
         </div>
         `
     }

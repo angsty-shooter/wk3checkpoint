@@ -2,7 +2,7 @@ import { ProxyState } from "../AppState.js";
 import List from "../Models/Task.js";
 
 
-class TaskService{
+class ListService{
 
     newList(){
         console.log("hello from service")
@@ -14,4 +14,4 @@ class TaskService{
     }
 }
 
-export const taskService = new TaskService
+export const listService = new ListService
