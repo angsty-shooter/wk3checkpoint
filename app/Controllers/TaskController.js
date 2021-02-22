@@ -10,11 +10,11 @@ export default class TaskController{
     create(event, pizzaId) {
     event.preventDefault()        
         let form = event.target
-        let rawTopping = {
+        let  = {
             title: form.title.value,
-            pizzaId: pizzaId
+            Id: Id
         }
-    taskService.create(rawTopping)       
+    taskService.create()       
     }
 
     delete(taskId) {

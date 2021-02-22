@@ -11,6 +11,6 @@ export function saveState() {
 export function loadState() {
     let data = JSON.parse(localStorage.getItem('taskmaster'))
     if (data) {
-        ProxyState.listArr = data.pizzas.map(greatList => new List(greatList))
+        ProxyState.listArr = data.listArr.map(greatList => new List(greatList))
     }
 }

@@ -6,10 +6,10 @@ import { saveState } from "../Utils/LocalStorage.js";
 
 class TaskService{
     constructor() {
-     ProxyState.on('toppings', saveState)
+     ProxyState.on('', saveState)
  }
-    create(rawTopping){
-        ProxyState.taskArr = [new Task(rawTopping), ...ProxyState.taskArr]
+    create(){
+        ProxyState.taskArr = [new Task(), ...ProxyState.taskArr]
         console.log(ProxyState.taskArr)
     }
     

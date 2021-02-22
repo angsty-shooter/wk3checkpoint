@@ -34,4 +34,8 @@ export default class ListController{
             }
         listService.create(list)       
         }
+
+    delete(listId) {
+        listService.delete(listId)
+    }
 }
