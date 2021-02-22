@@ -11,8 +11,7 @@ export default class List{
     get Template() {
         return /*html*/`
         <div class="col-4 border rounded shadow-lg">
-            <h1>${this.title}<button class="text-danger close mt-3"
-            onclick="app.pizzaController.delete('${this.id}')"><span>&times;</span></button> </h1>
+            <h1>${this.title}</h1>
             <h5>Tasks</h5>
             <!--<form onsubmit="app.toppingsController.create(event, '${this.id}')">
                 <div class="form-group">
@@ -23,6 +22,7 @@ export default class List{
                     </div>
                 </div>
             </form>-->
-        </div>`
+        </div>
+        `
     }
 }

@@ -13,6 +13,7 @@ function _draw() {
 export default class TaskController{
 
     constructor(){
+        ProxyState.on("listArr", _draw)
         _draw()
     }
 
@@ -22,6 +23,7 @@ export default class TaskController{
     }
 
     create(event) {
+        console.log("create list")
         event.preventDefault()        
             let form = event.target
             let list = {
