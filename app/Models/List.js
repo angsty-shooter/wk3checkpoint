@@ -16,7 +16,7 @@ export default class List{
             <h5>Tasks</h5>
             <form onsubmit="app.taskController.create(event, '${this.id}')">
                 <div class="form-group">
-                    <input type="text" name="title" placeholder="Enter task...">
+                    <input type="text" name="title" required minlength="3" maxlength="50" placeholder="Enter task...">
                     <button type="submit">Add Task</button>
                     <div class="row">
                     ${this.Tasks}

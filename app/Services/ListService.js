@@ -17,8 +17,14 @@ class ListService{
         ProxyState.listArr = [new List(list), ...ProxyState.listArr]
     }
     delete(listId) {
-        ProxyState.listArr = ProxyState.listArr.filter(l=> l.id != listId)
-        ProxyState.taskArr = ProxyState.taskArr.filter(t=> t.listId != listId)
+        let r = confirm("Are you sure you want to delete?")
+        if (r == true){
+            ProxyState.listArr = ProxyState.listArr.filter(l=> l.id != listId)
+            ProxyState.taskArr = ProxyState.taskArr.filter(t=> t.listId != listId)
+        }
+        else{
+            console.log("Cancel")
+        }
 }
 }
 export const listService = new ListService

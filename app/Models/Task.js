@@ -10,9 +10,9 @@ export default class Task {
 
     get Template() {
         return /* html */`
-        <div class="col-12">
-            <h5>${this.title}<button type="button" class="text-danger close mt-3"
-                    onclick="app.taskController.delete('${this.id}')"><span>&times;</span></button> </h5>
+        <div class="col-12 mt-3">
+            <h6><input type="checkbox" id="accept">${this.title}<button type="button" class="text-danger close mt-3"
+                    onclick="app.taskController.delete('${this.id}')"><span>&times;</span></button> </h6>
         </div>
         `
     }
