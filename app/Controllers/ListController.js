@@ -33,7 +33,8 @@ export default class ListController{
         event.preventDefault()        
             let form = event.target
             let list = {
-                title: form.listName.value
+                title: form.listName.value,
+                color: form.color.value
             }
             console.log(form.listName.value);
         listService.create(list)

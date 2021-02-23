@@ -25,6 +25,6 @@ class ListService{
         else{
             console.log("Cancel")
         }
-}
+    }
 }
 export const listService = new ListService
